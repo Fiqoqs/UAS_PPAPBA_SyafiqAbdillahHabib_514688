@@ -1,0 +1,68 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/cream_background"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/recipe_title_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Recipe Title"
+        android:visibility="gone"
+        android:background="@color/cream_light"
+        android:padding="12dp"
+        android:textColor="@color/cream_dark_text"/>
+
+    <EditText
+        android:id="@+id/recipe_description_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Recipe Description"
+        android:visibility="gone"
+        android:background="@color/cream_light"
+        android:padding="12dp"
+        android:textColor="@color/cream_dark_text"/>
+
+    <EditText
+        android:id="@+id/recipe_ingredients_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingredients (comma-separated)"
+        android:visibility="gone"
+        android:background="@color/cream_light"
+        android:padding="12dp"
+        android:textColor="@color/cream_dark_text"
+        android:inputType="textMultiLine"
+        android:lines="3"/>
+
+    <EditText
+        android:id="@+id/recipe_instructions_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Instructions (comma-separated)"
+        android:visibility="gone"
+        android:background="@color/cream_light"
+        android:padding="12dp"
+        android:textColor="@color/cream_dark_text"
+        android:inputType="textMultiLine"
+        android:lines="3"/>
+
+    <Button
+        android:id="@+id/add_recipe_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Recipe"
+        android:visibility="gone"
+        android:backgroundTint="@color/cream_dark"
+        android:textColor="@android:color/white"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recipes_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cream_light"/>
+</LinearLayout>
